@@ -1,10 +1,10 @@
-<?php
+<?
 
-$greeting = "Hello Universe";
-$name = "Yahya Hussein";
+//$greeting = "Hello Universe";
+//$name = "Yahya Hussein";
 
-echo "Hello, $name";
-echo $greeting;
+//echo "Hello, $name";
+//echo $greeting;
 
 //variables start with $
 //can't use single quotes to concatenate strings and variables together
