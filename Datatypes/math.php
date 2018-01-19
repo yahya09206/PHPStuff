@@ -6,7 +6,7 @@
 <body>
 <?php 
 
-
+echo 56 + 45;
 
  ?>
 </body>
