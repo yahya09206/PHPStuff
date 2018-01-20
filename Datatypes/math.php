@@ -8,6 +8,7 @@
 
 echo 56 + 45;
 
+//works like regular math
  ?>
 </body>
 </html>
