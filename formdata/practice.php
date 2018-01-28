@@ -1,3 +1,12 @@
+<?php 
+if (isset($_POST['submit'])) {
+	# code...
+	$username = $_POST['name'];
+	echo "your name is " . $username;
+}
+
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,7 +14,7 @@
 </head>
 <body>
 <form action="practice.php" method="post">
-	<input type="text" name="username">
+	<input type="text" name="name">
 	<input type="submit" name="submit">
 </form>
 </body>
