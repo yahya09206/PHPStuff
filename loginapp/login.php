@@ -4,8 +4,12 @@ if (isset($_POST['submit'])) {
 	$username = $_POST['username'];
 	$password = $_POST['password'];
 
-	echo $username;
-	echo $password;
+	//check if data exists
+	if($username && $password){
+		echo $username;
+		echo $password;
+		
+	}
 }
 
 ?>
