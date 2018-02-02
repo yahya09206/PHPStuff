@@ -10,14 +10,15 @@
 		<form action="">
 			<div class="form-group">
 				<label for="username">Username</label>
-				<input type="text" class="form-control">
+				<input type="text" name="username" class="form-control">
 					
 				</input>
 				<label for="password">Password</label>
-				<input type="password" class="form-control">
+				<input type="password" name="password" class="form-control">
 					
 				</input>
 			</div>
+			<input class="btn btn-primary" type="submit" name="submit" value="Submit">
 		</form>
 	</div>
 </div>
