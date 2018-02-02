@@ -9,6 +9,8 @@ if (isset($_POST['submit'])) {
 		echo $username;
 		echo $password;
 		
+	}else{
+		echo "noooo";
 	}
 }
 
