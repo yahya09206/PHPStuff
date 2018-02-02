@@ -1,3 +1,10 @@
+<?php 
+if (isset($_POST['submit'])) {
+	# code...
+	echo "clicked submit button";
+}
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +14,7 @@
 <body>
 <div class="container">
 	<div class="col-sm-6">
-		<form action="">
+		<form action="login.php" method="post">
 			<div class="form-group">
 				<label for="username">Username</label>
 				<input type="text" name="username" class="form-control">
