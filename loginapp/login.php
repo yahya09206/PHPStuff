@@ -9,7 +9,12 @@
 	<div class="col-xs-6">
 		<form action="">
 			<div class="form-group">
-				<input class="form-control">
+				<label for="username">Username</label>
+				<input type="text" class="form-control">
+					
+				</input>
+				<label for="password">Password</label>
+				<input type="password" class="form-control">
 					
 				</input>
 			</div>
