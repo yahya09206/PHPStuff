@@ -1,7 +1,11 @@
 <?php 
 if (isset($_POST['submit'])) {
 	# code...
-	echo "clicked submit button";
+	$username = $_POST['username'];
+	$password = $_POST['password'];
+
+	echo $username;
+	echo $password;
 }
 
 ?>
