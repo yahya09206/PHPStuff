@@ -31,7 +31,8 @@
 						<!-- while loop to update data -->
 						<?php 
 							while ($row = mysqli_fetch_assoc($result)) {
-								echo "<option value=''>1</option>";
+								$id = $row['id'];
+								echo "<option value='id'>$id</option>";
 							}
 						?>
 					</select>
