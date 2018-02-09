@@ -1,19 +1,10 @@
-<?php 
+<?php include "db.php";
 
 //CREATE
 if (isset($_POST['submit'])) {
 	# code...
 	$username = $_POST['username'];
 	$password = $_POST['password'];
-
-//connect to database
-$connection = mysqli_connect('localhost', 'root', 'root', 'loginapp', 8889);
-	if($connection){
-		echo "we are connected";
-	}else{
-		//error code
-		die('Database connection failed');
-	}
 
 	//insert data to mysql
 	$query = "INSERT INTO users(username, password)";

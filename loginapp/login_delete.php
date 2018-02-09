@@ -6,7 +6,7 @@
 	if (isset($_POST['submit'])) {
 		updateTable();
 	}
-	
+
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +18,7 @@
 <body>
 <div class="container">
 	<div class="col-sm-6">
-		<form action="" method="post">
+		<form action="login_delete" method="post">
 			<div class="form-group">
 				<label for="username">Username</label>
 				<input type="text" name="username" class="form-control">
