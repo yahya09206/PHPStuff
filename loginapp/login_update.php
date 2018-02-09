@@ -5,8 +5,22 @@
 <?php 
 	if (isset($_POST['submit'])) {
 		# code...
-		$_POST['username'];
-		$_POST['password'];
+		$username = $_POST['username'];
+		$password = $_POST['password'];
+		$id = $_POST['id'];
+
+		//query to update
+		$query = "UPDATE users SET ";
+		$query .= "username = '$username', ";
+		$query .= "password = '$password'";
+		$query .= "WHERE id = $id";
+
+		$result = mysqli_query($connection, $query);
+		//check if result
+		if (!$result) {
+			# code...
+			die("QUERY FAILED" . mysqli_error($connection));
+		}
 	}
 ?>
 
@@ -19,7 +33,7 @@
 <body>
 <div class="container">
 	<div class="col-sm-6">
-		<form action="login_create.php" method="post">
+		<form action="" method="post">
 			<div class="form-group">
 				<label for="username">Username</label>
 				<input type="text" name="username" class="form-control">
