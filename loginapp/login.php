@@ -5,12 +5,21 @@ if (isset($_POST['submit'])) {
 	$password = $_POST['password'];
 
 	//check if data exists
-	if($username && $password){
-		echo $username;
-		echo $password;
+	// if($username && $password){
+	// 	echo $username;
+	// 	echo $password;
 		
+	// }else{
+	// 	echo "noooo";
+	// }
+
+//connect to database
+$connection = mysqli_connect('localhost', 'root', 'root', 'loginapp', 8889);
+	if($connection){
+		echo "we are connected";
 	}else{
-		echo "noooo";
+		//error code
+		die('Database connection failed');
 	}
 }
 
