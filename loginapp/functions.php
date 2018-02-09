@@ -1,7 +1,10 @@
+<?php include "db.php" ?>
 <?php 
 
 function showAllData(){
 	//UPDATE
+		//make connection global
+		global $connection;
 		//select everything from users
 		$query = "SELECT * FROM users";
 		//prebuilt function for connecting with db that accepts two parameters
