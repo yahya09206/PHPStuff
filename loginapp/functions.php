@@ -1,6 +1,7 @@
 <?php include "db.php" ?>
 <?php 
 
+//function to show all data
 function showAllData(){
 //UPDATE
 	//make connection global
@@ -20,6 +21,7 @@ function showAllData(){
 	}
 }
 
+//function to update values
 function updateTable(){
 	# code...
 	global $connection;
@@ -41,6 +43,7 @@ function updateTable(){
 	}
 }
 
+//function to delete rows
 function deleteRows(){
 	# code...
 	global $connection;
