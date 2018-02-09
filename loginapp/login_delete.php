@@ -4,7 +4,7 @@
 
 <?php 
 	if (isset($_POST['submit'])) {
-		updateTable();
+		deleteRows();
 	}
 
 ?>
@@ -18,7 +18,7 @@
 <body>
 <div class="container">
 	<div class="col-sm-6">
-		<form action="login_delete" method="post">
+		<form action="login_delete.php" method="post">
 			<div class="form-group">
 				<label for="username">Username</label>
 				<input type="text" name="username" class="form-control">

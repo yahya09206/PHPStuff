@@ -41,4 +41,23 @@ function updateTable(){
 	}
 }
 
+function deleteRows(){
+	# code...
+	global $connection;
+	$username = $_POST['username'];
+	$password = $_POST['password'];
+	$id = $_POST['id'];
+
+	//query to update
+	$query = "DELETE FROM users ";
+	$query .= "WHERE id = $id ";
+
+	$result = mysqli_query($connection, $query);
+	//check if result
+	if (!$result) {
+		# code...
+		die("QUERY FAILED" . mysqli_error($connection));
+	}
+}
+
 ?>
