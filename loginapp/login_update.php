@@ -1,4 +1,4 @@
-<?php 
+<?php include "db.php";
 
 //UPDATE
 	//select everything from users
