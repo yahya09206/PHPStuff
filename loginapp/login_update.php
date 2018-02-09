@@ -28,13 +28,13 @@
 				<input type="password" name="password" class="form-control">
 				<div class="form-group">
 					<select name="" id="">
-						<option value="UPDATE">1</option>
+						<option value="">1</option>
 					</select>
 				</div>
 					
 				</input>
 			</div>
-			<input class="btn btn-primary" type="submit" name="submit" value="Submit">
+			<input class="btn btn-primary" type="submit" name="submit" value="UPDATE">
 		</form>
 	</div>
 </div>
