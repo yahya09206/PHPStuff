@@ -4,15 +4,6 @@ if (isset($_POST['submit'])) {
 	$username = $_POST['username'];
 	$password = $_POST['password'];
 
-	//check if data exists
-	// if($username && $password){
-	// 	echo $username;
-	// 	echo $password;
-		
-	// }else{
-	// 	echo "noooo";
-	// }
-
 //connect to database
 $connection = mysqli_connect('localhost', 'root', 'root', 'loginapp', 8889);
 	if($connection){
@@ -21,6 +12,10 @@ $connection = mysqli_connect('localhost', 'root', 'root', 'loginapp', 8889);
 		//error code
 		die('Database connection failed');
 	}
+
+	//insert data to mysql
+	$query = "INSERT INTO users(username, password)";
+
 }
 
 ?>
