@@ -27,8 +27,13 @@
 				<label for="password">Password</label>
 				<input type="password" name="password" class="form-control">
 				<div class="form-group">
-					<select name="" id="">
-						<option value="">1</option>
+					<select name="id" id="">
+						<!-- while loop to update data -->
+						<?php 
+							while ($row = mysqli_fetch_assoc($result)) {
+								echo "<option value=''>1</option>";
+							}
+						?>
 					</select>
 				</div>
 					
