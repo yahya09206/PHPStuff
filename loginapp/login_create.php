@@ -15,6 +15,14 @@ $connection = mysqli_connect('localhost', 'root', 'root', 'loginapp', 8889);
 
 	//insert data to mysql
 	$query = "INSERT INTO users(username, password)";
+	//concatenate with above query
+	$query .= "VALUE ('$username', '$password')";
+	//prebuilt function for connecting with db that accepts two parameters
+	$result = mysqli_query($connection, $query);
+
+	if(!result){
+		die('Query FAILED');
+	}
 
 }
 
