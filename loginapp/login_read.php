@@ -28,15 +28,19 @@ $connection = mysqli_connect('localhost', 'root', 'root', 'loginapp', 8889);
 <body>
 <div class="container">
 	<div class="col-sm-6">
-
 		<?php 
+			while ($row = mysqli_fetch_assoc($result)) {
+		?>
 
-			//bring out data
-			while ($row = mysqli_fetch_row($result)) {
-				#display data
+			<pre>
+				<?php
 				print_r($row);
+				?>
+			</pre>
+		<?php
 			}
-		 ?>
+		?>
+	
 	</div>
 </div>
 </body>
