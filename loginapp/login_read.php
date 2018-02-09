@@ -10,7 +10,7 @@ $connection = mysqli_connect('localhost', 'root', 'root', 'loginapp', 8889);
 		die('Database connection failed');
 	}
 
-	//insert data to mysql
+	//select everything from users
 	$query = "SELECT * FROM users";
 	//prebuilt function for connecting with db that accepts two parameters
 	$result = mysqli_query($connection, $query);
@@ -28,6 +28,15 @@ $connection = mysqli_connect('localhost', 'root', 'root', 'loginapp', 8889);
 <body>
 <div class="container">
 	<div class="col-sm-6">
+
+		<?php 
+
+			//bring out data
+			while ($row = mysqli_fetch_row($result)) {
+				#display data
+				print_r($row);
+			}
+		 ?>
 	</div>
 </div>
 </body>
