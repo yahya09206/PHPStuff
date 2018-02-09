@@ -1,11 +1,6 @@
 <?php 
 
-//CREATE
-if (isset($_POST['submit'])) {
-	# code...
-	$username = $_POST['username'];
-	$password = $_POST['password'];
-
+//READ
 //connect to database
 $connection = mysqli_connect('localhost', 'root', 'root', 'loginapp', 8889);
 	if($connection){
@@ -16,18 +11,13 @@ $connection = mysqli_connect('localhost', 'root', 'root', 'loginapp', 8889);
 	}
 
 	//insert data to mysql
-	$query = "INSERT INTO users(username, password)";
-	//concatenate with above query
-	$query .= "VALUE ('$username', '$password')";
+	$query = "SELECT * FROM users";
 	//prebuilt function for connecting with db that accepts two parameters
 	$result = mysqli_query($connection, $query);
 
 	if(!result){
 		die('Query FAILED' . mysqli_error());
 	}
-
-}
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -38,19 +28,6 @@ $connection = mysqli_connect('localhost', 'root', 'root', 'loginapp', 8889);
 <body>
 <div class="container">
 	<div class="col-sm-6">
-		<form action="login_create.php" method="post">
-			<div class="form-group">
-				<label for="username">Username</label>
-				<input type="text" name="username" class="form-control">
-					
-				</input>
-				<label for="password">Password</label>
-				<input type="password" name="password" class="form-control">
-					
-				</input>
-			</div>
-			<input class="btn btn-primary" type="submit" name="submit" value="Submit">
-		</form>
 	</div>
 </div>
 </body>
