@@ -26,6 +26,11 @@
 				</input>
 				<label for="password">Password</label>
 				<input type="password" name="password" class="form-control">
+				<div class="form-group">
+					<select name="" id="">
+						<option value="UPDATE">1</option>
+					</select>
+				</div>
 					
 				</input>
 			</div>
