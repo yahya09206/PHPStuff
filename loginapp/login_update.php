@@ -1,5 +1,14 @@
+<!-- include files -->
 <?php include "db.php"; ?>
 <?php include "functions.php";?>
+
+<?php 
+	if (isset($_POST['submit'])) {
+		# code...
+		$_POST['username'];
+		$_POST['password'];
+	}
+?>
 
 <!DOCTYPE html>
 <html>
@@ -17,7 +26,7 @@
 					
 				</input>
 				<label for="password">Password</label>
-				<input type="password" name="password" class="form-control">
+				<input type="password" 	name="password" class="form-control">
 				<div class="form-group">
 					<select name="id" id="">
 						<!-- while loop to update data -->
