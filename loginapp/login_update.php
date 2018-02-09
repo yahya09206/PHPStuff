@@ -5,7 +5,6 @@
 	$query = "SELECT * FROM users";
 	//prebuilt function for connecting with db that accepts two parameters
 	$result = mysqli_query($connection, $query);
-
 	if(!result){
 		die('Query FAILED' . mysqli_error());
 	}
@@ -19,19 +18,19 @@
 <body>
 <div class="container">
 	<div class="col-sm-6">
-		<?php 
-			while ($row = mysqli_fetch_assoc($result)) {
-		?>
-
-			<pre>
-				<?php
-				print_r($row);
-				?>
-			</pre>
-		<?php
-			}
-		?>
-	
+		<form action="login_create.php" method="post">
+			<div class="form-group">
+				<label for="username">Username</label>
+				<input type="text" name="username" class="form-control">
+					
+				</input>
+				<label for="password">Password</label>
+				<input type="password" name="password" class="form-control">
+					
+				</input>
+			</div>
+			<input class="btn btn-primary" type="submit" name="submit" value="Submit">
+		</form>
 	</div>
 </div>
 </body>
