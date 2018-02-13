@@ -11,7 +11,10 @@ if (isset($_POST['submit'])) {
 	$password = mysqli_real_escape_string($connection, $password);
 
 	//encrypting passwords
-	
+	$hashformat = "$2y$10$";
+	$salt = "iusesomecrazystrings22";
+	$hashF_and_salt = $hashformat . $salt;
+	$password = crypt($password, $hashF_and_salt);
 
 	//insert data to mysql
 	$query = "INSERT INTO users(username, password)";
