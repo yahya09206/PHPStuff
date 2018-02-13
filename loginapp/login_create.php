@@ -7,6 +7,8 @@ if (isset($_POST['submit'])) {
 	$password = $_POST['password'];
 
 	//function to prevent injection
+	$username = mysqli_real_escape_string($connection, $username);
+	$password = mysqli_real_escape_string($connection, $password);
 
 	//insert data to mysql
 	$query = "INSERT INTO users(username, password)";
