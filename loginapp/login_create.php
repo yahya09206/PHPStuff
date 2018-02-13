@@ -6,6 +6,8 @@ if (isset($_POST['submit'])) {
 	$username = $_POST['username'];
 	$password = $_POST['password'];
 
+	//function to prevent injection
+
 	//insert data to mysql
 	$query = "INSERT INTO users(username, password)";
 	//concatenate with above query
