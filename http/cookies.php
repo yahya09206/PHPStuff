@@ -5,7 +5,7 @@
 	//user time function to set expiration date
 	$expire = time() + (60*60*24*7);
 	setcookie($name, $value, $expire);
-	
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -13,6 +13,19 @@
 	<title></title>
 </head>
 <body>
+
+	<?php 
+
+
+		if (isset($_COOKIE["John"])) {
+			# code...
+			//grab value from cookie
+			$someOne = $_COOKIE["John"];
+
+		}else{
+			$someOne = "";
+		}
+	?>
 
 </body>
 </html>
