@@ -2,8 +2,10 @@
 	//set cookies takes 3 params
 	$name = 'John';
 	$value = 100;
-	$expire = 
-	setcookie('', '', '');
+	//user time function to set expiration date
+	$expire = time() + (60*60*24*7);
+	setcookie($name, $value, $expire);
+	
 ?>
 <!DOCTYPE html>
 <html>
