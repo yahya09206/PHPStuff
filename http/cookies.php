@@ -21,6 +21,7 @@
 			# code...
 			//grab value from cookie
 			$someOne = $_COOKIE["John"];
+			echo $someOne;
 
 		}else{
 			$someOne = "";
