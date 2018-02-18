@@ -1,3 +1,6 @@
+<?php 
+	echo $_POST['name'];
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,7 +8,8 @@
 </head>
 <body>
 <form action="post.php" method="post">
-	<input type="" name="">
+	<input type="text" name="name">
+	<input type="submit" name="submit">
 </form>
 </body>
 </html>
