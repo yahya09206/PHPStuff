@@ -9,5 +9,10 @@
 </head>
 <body>
 
+<?php 
+	$id = 10;
+	
+?>
+	<a href="get.php?id=<?php echo $id ?>">Click Here</a>
 </body>
 </html>
