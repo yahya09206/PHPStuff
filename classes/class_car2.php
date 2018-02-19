@@ -1,13 +1,13 @@
 <?php 
 //class syntax
 class Car{
-
+	function moveWheels(){
+		echo "car is moving";
+	}
 }
-
-// if (class_exists("Car")) {
-// 	echo "Welcome to my car";
-// }else{
-// 	echo "Sorry";
-// }
-
+if (method_exists("Car", "moveWheels")) {
+	echo "The method exists";
+}else{
+	echo "Sorry";
+}
 ?>
