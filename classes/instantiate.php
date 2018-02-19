@@ -5,4 +5,9 @@ class Car{
 		echo "car is moving";
 	}
 }
+
+//new instance of car
+$audi = new Car();
+$benz = new Car();
+
 ?>
