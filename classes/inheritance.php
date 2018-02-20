@@ -19,9 +19,19 @@ class Car{
 
 //new instance of car
 $audi = new Car();
+$jet = new Plane();
+$jet->moveWheels();
+echo $jet->wheels;
 
-class plane{
-	
+
+//class that inherits everything from car class
+class Plane extends Car{
+
+
+}
+
+if(class_exists("Plane")){
+	echo "It exist ";
 }
 
 ?>
